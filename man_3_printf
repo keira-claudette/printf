@@ -1,0 +1,38 @@
+.\" Manpage for printf
+.\" Contact details available at  https://github.com/rabbice
+.TH man 3 "15 March 2021" "1.0" "print-f man page"
+.SH NAME
+printf \- prints to standard output all data types
+.SH SYNOPSIS
+#include <stdio.h>
+#include <unistd.h>
+#include <stdarg.h>
+
+
+.SH DESCRIPTION
+This printf() is a custom replica of printf function from the stdio library.
+
+It prints to the stdout according to the specifiers indicated below
+
+.SH SPECIFIERS
+These characters specify the type of argument that will be printed and are
+preceeded by the % symbol.
+
+%c - unsigned char
+
+%s - this const char * is expcted to be a pointer to an array of characters.
+It does not contain the null byte
+
+%d, %i - prints interger s to base 10
+
+%% - gives the % its alternate meaning and will print %
+.SH RETURN VALUE
+Returns an integer representing number of output printed not including the
+ null byte
+.SH SEE ALSO
+project on POINTERS TO FUNCTIONS and VARIADIC FUNCTIONS
+.SH BUGS
+No known bugs.Send bug reports at https://github.com/rabbice
+.SH AUTHOR
+IAN MARU & CLAUDETTE MOKEIRA
+alx 2021.
